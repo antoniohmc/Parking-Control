@@ -16,7 +16,7 @@ public class ParkingSpotModel implements Serializable {
     private UUID id;
 
     @Column(nullable = false, unique = true, length = 10)
-    private String parkinSpotNumber;
+    private String parkingSpotNumber;
 
     @Column(nullable = false, unique = true, length = 7)
     private String licensePlateCar;
@@ -37,7 +37,7 @@ public class ParkingSpotModel implements Serializable {
     private String responsibleName;
 
     @Column(nullable = false, length = 30)
-    private String apartament;
+    private String apartment;
 
     @Column(nullable = false, length = 30)
     private String block;
@@ -50,12 +50,12 @@ public class ParkingSpotModel implements Serializable {
         this.id = id;
     }
 
-    public String getParkinSpotNumber() {
-        return parkinSpotNumber;
+    public String getParkingSpotNumber() {
+        return parkingSpotNumber;
     }
 
-    public void setParkinSpotNumber(String parkinSpotNumber) {
-        this.parkinSpotNumber = parkinSpotNumber;
+    public void setParkingSpotNumber(String parkingSpotNumber) {
+        this.parkingSpotNumber = parkingSpotNumber;
     }
 
     public String getLicensePlateCar() {
@@ -106,12 +106,12 @@ public class ParkingSpotModel implements Serializable {
         this.responsibleName = responsibleName;
     }
 
-    public String getApartament() {
-        return apartament;
+    public String getApartment() {
+        return apartment;
     }
 
-    public void setApartament(String apartament) {
-        this.apartament = apartament;
+    public void setApartment(String apartment) {
+        this.apartment = apartment;
     }
 
     public String getBlock() {
