@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 public class ParkingSpotDto {
 
     @NotBlank
-    private String parkinSpotNumber;
+    private String parkingSpotNumber;
 
     @NotBlank
     @Size(max = 7)
@@ -25,17 +25,17 @@ public class ParkingSpotDto {
     private String responsibleName;
 
     @NotBlank
-    private String apartament;
+    private String apartment;
 
     @NotBlank
     private String block;
 
-    public @NotBlank String getParkinSpotNumber() {
-        return parkinSpotNumber;
+    public @NotBlank String getParkingSpotNumber() {
+        return parkingSpotNumber;
     }
 
-    public void setParkinSpotNumber(@NotBlank String parkinSpotNumber) {
-        this.parkinSpotNumber = parkinSpotNumber;
+    public void setParkingSpotNumber(@NotBlank String parkingSpotNumber) {
+        this.parkingSpotNumber = parkingSpotNumber;
     }
 
     public @NotBlank @Size(max = 7) String getLicensePlateCar() {
@@ -78,12 +78,12 @@ public class ParkingSpotDto {
         this.responsibleName = responsibleName;
     }
 
-    public @NotBlank String getApartament() {
-        return apartament;
+    public @NotBlank String getApartment() {
+        return apartment;
     }
 
-    public void setApartament(@NotBlank String apartament) {
-        this.apartament = apartament;
+    public void setApartment(@NotBlank String apartment) {
+        this.apartment = apartment;
     }
 
     public @NotBlank String getBlock() {
